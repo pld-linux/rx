@@ -18,7 +18,10 @@ GNU Regular Expression Library.
 Biblioteka wyra¿eñ regularnych GNU.
 
 %prep
-%setup -q
+#%setup -q
+# workaround for tar (some paths contain `..', use -P)
+%setup -qcT
+tar xz -P -f %{SOURCE0} -C ..
 
 %build
 cp -f /usr/share/automake/config.* .
