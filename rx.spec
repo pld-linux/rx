@@ -28,7 +28,6 @@ install -d $RPM_BUILD_ROOT%{_includedir}
 
 install -c rx/librx.a $RPM_BUILD_ROOT%{_libdir}/librx.a
 install -c rx/inst-rxposix.h $RPM_BUILD_ROOT%{_includedir}/rxposix.h
-gzip -9nf ANNOUNCE BUILDING COOKOFF COPYING doc/*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -38,4 +37,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/librx.a
 %{_includedir}/rxposix.h
 
-%doc doc ANNOUNCE.gz BUILDING.gz COOKOFF.gz COPYING.gz
+%doc doc ANNOUNCE BUILDING COOKOFF COPYING
