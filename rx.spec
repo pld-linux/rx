@@ -8,6 +8,7 @@ Group:		Libraries
 Source0:	ftp://ftp.gnu.org/pub/gnu/rx/%{name}-%{version}.tar.gz
 # Source0-md5:	e44e5f6ff9fd8ca9d46bda42bcacee5e
 BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -20,6 +21,7 @@ Biblioteka wyra¿eñ regularnych GNU.
 %setup -q
 
 %build
+cp -f /usr/share/automake/config.* .
 %{__autoconf}
 cd rx
 %{__autoconf}
@@ -34,7 +36,7 @@ install -d $RPM_BUILD_ROOT{%{_prefix},%{_infodir}}
 
 %{__make} install \
 	prefix=$RPM_BUILD_ROOT%{_prefix} \
-	exec_prefix=$RPM_BUILD_ROOT%{_prefix}
+	libdir=$RPM_BUILD_ROOT%{_libdir}
 
 install doc/rx.info $RPM_BUILD_ROOT%{_infodir}
 
