@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Libraries
 Source0:	ftp://ftp.gnu.org/pub/gnu/rx/%{name}-%{version}.tar.gz
+# Source0-md5:	e44e5f6ff9fd8ca9d46bda42bcacee5e
 BuildRequires:	autoconf
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
