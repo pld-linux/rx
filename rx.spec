@@ -7,6 +7,7 @@ License:	GPL
 Group:		Libraries
 Source0:	ftp://ftp.gnu.org/pub/gnu/rx/%{name}-%{version}.tar.gz
 # Source0-md5:	e44e5f6ff9fd8ca9d46bda42bcacee5e
+Patch0:		%{name}-warnings.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -22,6 +23,7 @@ Biblioteka wyra¿eñ regularnych GNU.
 # workaround for tar (some paths contain `..', use -P)
 %setup -qcT
 tar xz -P -f %{SOURCE0} -C ..
+%patch0 -p1
 
 %build
 cp -f /usr/share/automake/config.* .
