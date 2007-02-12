@@ -1,5 +1,5 @@
 Summary:	GNU Regular Expression Library
-Summary(pl):	Biblioteka wyraøeÒ regularnych GNU
+Summary(pl.UTF-8):   Biblioteka wyra≈ºe≈Ñ regularnych GNU
 Name:		rx
 Version:	1.5
 Release:	1
@@ -15,8 +15,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 GNU Regular Expression Library.
 
-%description -l pl
-Biblioteka wyraøeÒ regularnych GNU.
+%description -l pl.UTF-8
+Biblioteka wyra≈ºe≈Ñ regularnych GNU.
 
 %prep
 #%setup -q
