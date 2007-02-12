@@ -1,5 +1,5 @@
 Summary:	GNU Regular Expression Library
-Summary(pl.UTF-8):   Biblioteka wyrażeń regularnych GNU
+Summary(pl.UTF-8):	Biblioteka wyrażeń regularnych GNU
 Name:		rx
 Version:	1.5
 Release:	1
